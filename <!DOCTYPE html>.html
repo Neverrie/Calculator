@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <script src="functions.js"></script>
+    
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+    
+        <div class="calc-2str">
+            <button onclick="click_operation('C')">C</button>
+            <button onclick="click_operation('%')">%</button>
+            <button onclick="click_operation('<-')">&#8592</button>
+            <button onclick="click_operation('/')">/</button>
+    
+        </div>
+        <div class="calc-2str">
+            <button onclick="click_digit('7')" >7</button>
+            <button onclick="click_digit('8')">8</button>
+            <button onclick="click_digit('9')">9</button>
+            <button onclick="click_operation('*')">*</button>
+        </div>
+        <div class="calc-2str">
+            <button onclick="click_digit('4')">4</button>
+            <button onclick="click_digit('5')">5</button>
+            <button onclick="click_digit('6')">6</button>
+            <button onclick="click_operation('-')">-</button>
+        </div>
+        <div class="calc-2str">
+            <button onclick="click_digit('1')">1</button>
+            <button onclick="click_digit('2')">2</button>
+            <button onclick="click_digit('3')">3</button>
+            <button onclick="click_operation('+')">+</button>
+        </div>
+        <div class="calc-2str">
+            <div class="calc-1str-double"> 
+                <button onclick="click_digit('0')">0</button>
+            </div>
+            <button onclick="click_digit('.')">.</button>
+            <button onclick="click_operation('=')">=</button>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
