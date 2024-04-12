@@ -34,11 +34,13 @@ function click_operation(value){
         }
     }
     else {
-        operation=value
         counter++
         if (counter>1){
             first_digit = result(first_digit,second_digit, operation)
             second_digit=""
+        }
+        if(value!=operation){
+            operation=value
         }
     }
 }
@@ -66,7 +68,7 @@ function result(first_digit, second_digit, operation){
     else if (operation == '%') {
         if (second_digit == "0") {
             document.getElementById('display').textContent = "Error";
-            return { first_digit: '', second_digit: '', operation: '' };
+            return 0;
         } 
         else {
             result = Number(first_digit) % Number(second_digit);
