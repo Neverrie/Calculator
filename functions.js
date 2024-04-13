@@ -34,6 +34,10 @@ function click_operation(value){
         }
     }
     else {
+        if(first_digit == "" && value=="-") {   
+        first_digit="-"
+        return
+        }   
         counter++
         if (counter>1){
             first_digit = result(first_digit,second_digit, operation)
