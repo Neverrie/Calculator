@@ -3,7 +3,7 @@
 let first_digit="", second_digit="", operation="", counter = 0;
 
 function click_digit(digit){
-    if (operation==""){
+    if (operation==" "){
         first_digit+=digit
         document.getElementById('display').textContent = first_digit;
     }
